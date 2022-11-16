@@ -11,7 +11,7 @@ GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "cr
 GOOGLE_SHEET_URL = os.getenv("GOOGLE_SHEET_URL")
 
 LOYVERSE_URL = "https://api.loyverse.com/v1.0"
-LOYVERSE_TOKEN = "cfe6dd803e0e4bf3831ceebca57c6d6f"
+LOYVERSE_TOKEN = os.getenv("LOYVERSE_TOKEN")
 API_PATH = {
     "GET_RECEIPTS": "/receipts",
     "GET_CUSTOMERS": "/customers",
