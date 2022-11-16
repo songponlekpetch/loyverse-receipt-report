@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app
+    tty: true
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - TZ=Asia/Bangkok
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
